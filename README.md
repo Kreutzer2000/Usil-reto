@@ -24,3 +24,10 @@ You can find release notes for all releases, including out-of-support releases, 
 
 [releases-index.json]: https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json
 [policies]: release-policies.md
+
+## Reto Git
+
+Para el reto Git, se creó un archivo `log.md` que contiene los últimos 10 commits del branch principal. El comando utilizado para generar este archivo fue:
+
+```bash
+git log -n 10 > log.md
