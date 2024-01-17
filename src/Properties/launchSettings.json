@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "hello-world": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:32248;http://localhost:32249"
+    }
+  }
+}

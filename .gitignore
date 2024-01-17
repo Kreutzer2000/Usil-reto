@@ -1,0 +1,34 @@
+# Archivos binarios y de objeto
+**/[Bb]in/
+**/[Oo]bj/
+
+# Carpetas de resultados de pruebas y cobertura
+**/[Tt]est[Rr]esults/
+**/coveragereport/
+
+# Archivos generados por Visual Studio
+*.user
+*.userosscache
+*.suo
+*.cache
+*.csproj.user
+
+# Archivos de configuración de la build
+**/[Rr]elease/
+**/[Dd]ebug/
+**/[Xx]64/
+**/[Xx]86/
+**/[Bb]uild/
+
+# Carpetas y archivos específicos de Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Archivos de logs
+*.log
+*.log.*
+
+# Otros archivos y carpetas comunes a ignorar
+*.swp
+*~
+.DS_Store
