@@ -25,7 +25,7 @@ namespace HangmanGame.Tests
 
             // Asserts
             Assert.NotNull(table);
-            Assert.Equal(2, table.Rows.Length); // There should be 2 rows
+            Assert.Equal(2, table.Rows.Length);
             Assert.Equal(width, table.Width);
             Assert.Equal(spacing, table.Spacing);
         }
@@ -38,12 +38,11 @@ namespace HangmanGame.Tests
                                                 new object[] { "Cell 2", Cell.CentreAlign },
                                                 new object[] { "Cell 3", Cell.RightAlign } };
 
-            // Building the row
             var row = TableFactory.BuildRow(rowConfig);
 
             // Asserts
             Assert.NotNull(row);
-            Assert.Equal(3, row.Cells.Length); // There should be 3 cells
+            Assert.Equal(3, row.Cells.Length);
         }
 
         [Fact]
@@ -53,7 +52,6 @@ namespace HangmanGame.Tests
             string text = "Test Cell";
             int alignment = Cell.CentreAlign;
 
-            // Building the cell
             var cell = TableFactory.BuildCell(new object[] { text, alignment });
 
             // Asserts
@@ -61,7 +59,5 @@ namespace HangmanGame.Tests
             Assert.Equal(text, cell.Text);
             Assert.Equal(alignment, cell.Align);
         }
-
-        // More tests can be added here as needed
     }
 }

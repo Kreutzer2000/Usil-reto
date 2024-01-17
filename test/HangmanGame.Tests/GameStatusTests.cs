@@ -3,9 +3,6 @@ using Hangman;
 
 public class GameStatusTests
 {
-    /// <summary>
-    /// Verifica que el estado inicial del juego sea "jugando".
-    /// </summary>
     [Fact]
     public void GameStatus_InitialStatus_IsPlaying()
     {
@@ -13,9 +10,6 @@ public class GameStatusTests
         Assert.True(game.IsPlaying());
     }
 
-    /// <summary>
-    /// Asegura que el juego cambia a estado "no jugando" cuando se pierde (vidas a 0).
-    /// </summary>
     [Fact]
     public void GameStatus_LoseGame_IsNotPlaying()
     {
@@ -31,9 +25,6 @@ public class GameStatusTests
         Assert.Equal("Game Over!", game.Status);
     }
 
-    /// <summary>
-    /// Confirma que el juego termina con un estado de victoria al adivinar correctamente todas las letras.
-    /// </summary>
     [Fact]
     public void WinGame_CorrectGuesses_CompletesGame()
     {
@@ -47,9 +38,6 @@ public class GameStatusTests
         Assert.Equal("You Win!", game.Status);
     }
 
-    /// <summary>
-    /// Verifica que el juego comienza con las vidas correctas y el mensaje de estado inicial.
-    /// </summary>
     [Fact]
     public void GameStarts_Correctly()
     {

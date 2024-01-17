@@ -4,7 +4,7 @@
 
 # Carpetas de resultados de pruebas y cobertura
 **/[Tt]est[Rr]esults/
-**/coveragereport/
+##**/coveragereport/
 
 # Archivos generados por Visual Studio
 *.user

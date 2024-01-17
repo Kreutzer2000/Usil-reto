@@ -3,9 +3,6 @@ using Hangman;
 
 public class GameTests
 {
-    /// <summary>
-    /// Comprueba que adivinar una letra correcta no reduce las vidas.
-    /// </summary>
     [Fact]
     public void GuessLetter_CorrectGuess_DoesNotDecreaseLives()
     {
@@ -18,9 +15,7 @@ public class GameTests
         Assert.Contains('T', game.GuessedLetters);
     }
 
-    /// <summary>
-    /// Asegura que adivinar una letra incorrecta reduce las vidas.
-    /// </summary>
+
     [Fact]
     public void GuessLetter_IncorrectGuess_DecreasesLives()
     {
@@ -33,9 +28,7 @@ public class GameTests
         Assert.Contains('X', game.GuessedLetters);
     }
 
-    /// <summary>
-    /// Verifica que la palabra mostrada se actualiza correctamente tras cada adivinanza.
-    /// </summary>
+    
     [Fact]
     public void ShownWord_UpdatesAfterGuess()
     {
@@ -44,9 +37,6 @@ public class GameTests
         Assert.Equal("T__T", game.ShownWord());
     }
 
-    /// <summary>
-    /// Confirma que las letras incorrectas se acumulan correctamente.
-    /// </summary>
     [Fact]
     public void IncorrectLetters_AccumulateOnWrongGuesses()
     {
@@ -57,9 +47,7 @@ public class GameTests
         Assert.Contains('B', game.IncorrectLetters());
     }
 
-    /// <summary>
-    /// Comprueba que los caracteres prohibidos son ignorados y no afectan las vidas ni se añaden a las letras adivinadas.
-    /// </summary>
+    
     [Fact]
     public void GuessLetter_IgnoresForbiddenCharacters()
     {

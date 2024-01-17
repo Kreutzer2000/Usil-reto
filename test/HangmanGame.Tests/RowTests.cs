@@ -6,11 +6,10 @@ public class RowTests
     [Fact]
     public void Row_Draw_SingleCellLeftAligned()
     {
-        // Prueba con una sola celda alineada a la izquierda
         var cells = new Cell[] { new Cell("Left") };
         var row = new Row(cells);
 
-        string expectedOutput = "Left"; // La celda "Left" debe aparecer tal cual
+        string expectedOutput = "Left";
         Assert.Equal(expectedOutput, row.Draw(20));
     }
 
